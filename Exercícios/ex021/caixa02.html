@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+
+        }
+        /* No border-radius, é possível mudar cada ponta individualmente.
+        Ex: 
+        border-top-left-radius:
+        border-top-right-radius:
+        border-bottom-left-radius:
+        border-bottom-right-radius:
+        */
+        header{
+            color: white;
+            background-image: linear-gradient(45deg, orange, yellow);
+            width: 400px;
+            height: 100px;
+            padding: 5px 10px;
+            margin: auto;
+            text-align: center;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: rgb(236, 155, 4);
+            border-radius: 10px;
+        }
+        nav > a{
+            display: inline-block;
+            height: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-image: linear-gradient(45deg, orange, yellow);
+            padding: 10px;
+            margin: 25px 10px 10px 10px;
+            border-radius: 15px;
+        }
+        #notícias{
+            background-color: rgb(247, 182, 103);
+            border-radius: 10px;
+            height: 250px;
+        }
+        #notícias > article > aside{
+            background-color: rgb(214, 158, 89);
+            margin: 0px 20px 10px 20px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        #notícias > article > p{
+            text-align: justify;
+            margin: 15px;
+        }
+        #notícias > article > h2{
+            margin: auto;
+            padding-top: 20px;
+            text-align: center;
+        }
+        #notícias > article > aside > p{
+            text-align: center;
+            margin: 10px 0px;
+            padding-top: 10px;
+        }
+
+        footer{
+            background-image: linear-gradient(45deg, orange, yellow);
+            color: white;
+            height: 40px;
+            margin: auto;
+            border-radius: 15px;
+        }
+        footer > p{
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <p>Esporte Músicas Política</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, accusantium facere. Voluptate, quas doloremque velit natus minus est modi dolor vero iusto in itaque nam, molestiae blanditiis repellendus dolorem non.</p>
+                <aside>
+                    <p>Artigo escrito por Levi Soares</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por Levi Soares</p>
+    </footer>
+</body>
+</html>
+
+<!-- Lembre-se que da para usar, como base, as sombras no devtools do navegador, copiar e colar no visual studio(editor de código-fonte) -->

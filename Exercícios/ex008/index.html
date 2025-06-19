@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <style>
+    body {background-color: rgb(171, 255, 182);}
+   </style>
+    
+    <title>Outras formatações!!</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/Pré-formatado</h2>
+    <p>O comando <code><mark>document.getElementyById('teste')</mark></code> é em linguagem JavaScript.</p> <!-- <code> serve para deixar a palavra, visualmente, em formato de código fonte.-->
+<pre>
+    <code>
+    num= int(input('Digite um número'))
+    if num % 2==0:
+        print(f'0 número {num} e PAR')
+    else:
+        print(f'0 número {num} e ÍMPAR')
+    print('Fim do programa')
+    </code>
+</pre> <!-- A tag <pre> considera todos os espaços contidos no código. Ele formata o texto.-->
+   
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p> <!--Use a tag <q> quandor fizer uma citação. Serve para dar sentido a frase ou palavra, ao invés de forma.-->
+   
+        <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML pra Leigos:</p>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elememtos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote> <!--O Elemento HTML <blockquote> (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte pode ser dada usando o <cite> elemento. -->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!-- Para mostrar o significado de algumas abreviações, basta usar a tag <abbr> e escrever o a palavra nas aspas do 'Title'-->
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* em HTML é id = emm CS é # */
+/* em HTML é class = em CSS é . */
+/* Dentro de todo documento só pode usar 1 id */
+/* A função class é multipla. É possível usar mais de 1 class em uma tag */
+
+body {
+    background-color: #0fc2bfec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 15px;
+    width: 700px;
+    box-shadow: 5px 10px 20px #023535;
+    padding: 20px;
+}
+
+
+h1 {
+    color: #015958;
+}
+
+h2 {
+    color: #023535;
+}
+
+.titulos{
+background-color: #015958 ;
+color: white;
+border-radius: 5px;
+padding: 10px;
+width: 700px;
+
+}
+
+div{
+background-color:white;
+width: 800px;
+border-radius: 15px;
+padding: 10px;
+margin: auto;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens, dinâmicas, áudio e vídeo.</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vãrios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+    <!--Coloque as imagens de forma hierárquica, do menor para o maior.-->    
+        <source media="(max-width: 750px)" srcset="imagens/300x300.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="imagens/700x700.jpg" type="image/jpeg"> <!--Lembre-se de olhar o type no Iana Media-->
+        <img src="imagens/1000x1000.jpg" alt="Imagem flexível">    
+    </picture>
+    <!-- O elemento HTML <picture> é um container usado para especificar múltiplos elementos <source> para um elemento específico <img> contido nele.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    
+    <!--<audio src="midia/Alok, Bruno Martini feat. Zeeba _ Hear Me Now [Lyrics].mp3"  controls></audio>-->
+    
+    <!-- Para inserir arquivos de áudio, basta inserir a tag <audio> colocar parâmetros de controls(para controlar o áudio, pausar...) e a autoplay(toca ao abrir o navegador). Para ter maior compatibilidade, use arquivos de áudio nas versões- MP3, OGG e WAV-->
+    <audio preload="metadata" controls>
+        <source src="midia/Alok, Bruno Martini feat. Zeeba _ Hear Me Now [Lyrics].mp3" type="	audio/mpeg"> 
+        <source src="midia/Alok, Bruno Martini feat. Zeeba _ Hear Me Now [Lyrics] OGG.ogg" type="audio/ogg">
+        <source src="midia/Alok, Bruno Martini feat. Zeeba _ Hear Me Now [Lyrics] wav.wav" type="audio/wav">
+        </audio>
+    <p>Se o seu navegador não processar o formato do áudio, <a href="midia/Alok, Bruno Martini feat. Zeeba _ Hear Me Now [Lyrics].mp3" download="Alok, Bruno Martini feat. Zeeba - Hear Me Now [Lyrics].mp3"> clique aqui para baixar o arquivo em MP3!!</a> </p>
+</body>
+</html>

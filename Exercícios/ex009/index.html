@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: rgb(147, 202, 235);}
+    </style>
+    <title>Listas no HTML</title>
+</head>
+<body>
+    <h1>Listas no HTML</h1>
+    
+    <h2>Listas ordenadas:</h2>
+    <ol type="1" start="1"> <!--O 'start' serve apenas para declarar qual será o primeiro número(SÓ FUNCIONANDO USANDO NÚMEROS COMO FUNÇÃO). A, a, I, i, 1-->
+        <li>Acordar</li>
+        <li>Levantar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+
+    <h2>Listas não ordenadas:</h2>
+    <ul type="square"> <!-- Disk, circle e square.-->
+        <li>Comprar pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Café</li>
+        <li>Ovos</li>
+    </ul>
+    
+    <h2>Juntando listas versçao 1.0:</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <!--Se quiser selecionar mais de uma linha, palavra ou letra para modificar digitando, clique com o botão direito pressionando ALT o local desejado.-->
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    </dl>
+    <!--
+        dl= lista de definição.
+        dt= lista de termo.
+        dd= lista de descrição.
+        
+    -->
+</body>
+</html>

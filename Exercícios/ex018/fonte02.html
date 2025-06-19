@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <Style>
+        @font-face{
+            font-family: 'Magnetic' ;
+            src: url(Fontes/Magnetic\ Free.otf) format('opentype'), url(Fontes/Magnetic\ Free.ttf) format('truetype');
+            
+        /* 
+        Tipos de format()
+        - opentype(otf)
+        - truetype(ttf)
+        - embedded-opentype
+        - trutype-aat(Apple Advanced Typography)
+        - svg */
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Magnetic', Times, serif;
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam assumenda, quam incidunt, recusandae exercitationem sunt alias id quod accusantium rerum quidem voluptatem error aperiam eos officia totam sequi. Illo.</p>
+</body>
+</html>
