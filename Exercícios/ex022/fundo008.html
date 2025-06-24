@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pr-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            position: relative;
+            /* Todo posicionamento de um box é relativo. Só estamos sendo explicitos nessa ordem. */
+            
+            height: 96vh;
+            padding: 10px;
+            
+        }
+        #conteudo{
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            height: 200px;
+            width: 400px;
+            
+            position: absolute;
+            /* Ao colocar o posicionamento absoluto, você consegue usar o 'left' e o 'right', assim posicionando a box 'filha'. */
+            left: 50%;
+            top: 50%;
+           
+            transform: translate(-50%, -50%); 
+            /* Move o elemento para uma nova posição */
+        }
+    </style>
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

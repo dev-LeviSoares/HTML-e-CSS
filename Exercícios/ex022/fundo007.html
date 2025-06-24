@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attanchment</title>
+    <style>
+        body{
+            height: 100vh;
+            
+            /* background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+            /* Esse shorthand é o indicado pela W3C */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover; /* O background-size deve ser colocado separado.*/
+            /* 
+            O 'background-attachment: 
+            
+            fixed = A imagem de fundo permanece fixa em relação à janela de visualização, mesmo quando o conteúdo do elemento rola.
+            
+            local = A imagem de fundo rola junto com o conteúdo do elemento, mas apenas dentro do próprio elemento. Se o elemento pai tiver rolagem, a imagem de fundo não rolará com o elemento pai. 
+            
+            scroll = A imagem de fundo rola junto com o elemento e seu conteúdo. Este é o valor padrão.
+            */
+            
+            /* 
+                Shorthand - background 
+                color > image > position > repeat > [size] > attanchment
+            */
+        }
+        main{
+            max-width: 400px;
+            background-color: white;
+            margin: auto;
+            border: 5px solid orange;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        main h1{
+            text-align: center;
+        }
+        main p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Background fixo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quasi iusto similique, cupiditate magnam doloribus impedit ratione facilis deserunt accusantium quo hic nisi, non, repudiandae nobis. Ratione eum numquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit veniam architecto, ab ad, facere repellendus sint culpa inventore, ex exercitationem vitae nam quam magnam ipsa blanditiis similique reprehenderit obcaecati Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa corporis nihil voluptate, dignissimos at, id ullam iusto enim dolores eum accusantium? Nulla odio sed maiores ut eaque vitae libero accusantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quasi iusto similique, cupiditate magnam doloribus impedit ratione facilis deserunt accusantium quo hic nisi, non, repudiandae nobis. Ratione eum numquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit veniam architecto, ab ad, facere repellendus sint culpa inventore, ex exercitationem vitae nam quam magnam ipsa blanditiis similique reprehenderit obcaecati Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa corporis nihil voluptate, dignissimos at, id ullam iusto enim dolores eum accusantium? Nulla odio sed maiores ut eaque vitae libero accusantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quasi iusto similique, cupiditate magnam doloribus impedit ratione facilis deserunt accusantium quo hic nisi, non, repudiandae nobis. Ratione eum numquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit veniam architecto, ab ad, facere repellendus sint culpa inventore, ex exercitationem vitae nam quam magnam ipsa blanditiis similique reprehenderit obcaecati Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa corporis nihil voluptate, dignissimos at, id ullam iusto enim dolores eum accusantium? Nulla odio sed maiores ut eaque vitae libero accusantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quasi iusto similique, cupiditate magnam doloribus impedit ratione facilis deserunt accusantium quo hic nisi, non, repudiandae nobis. Ratione eum numquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit veniam architecto, ab ad, facere repellendus sint culpa inventore, ex exercitationem vitae nam quam magnam ipsa blanditiis similique reprehenderit obcaecati Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa corporis nihil voluptate, dignissimos at, id ullam iusto enim dolores eum accusantium? Nulla odio sed maiores ut eaque vitae libero accusantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quasi iusto similique, cupiditate magnam doloribus impedit ratione facilis deserunt accusantium quo hic nisi, non, repudiandae nobis. Ratione eum numquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit veniam architecto, ab ad, facere repellendus sint culpa inventore, ex exercitationem vitae nam quam magnam ipsa blanditiis similique reprehenderit obcaecati Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa corporis nihil voluptate, dignissimos at, id ullam iusto enim dolores eum accusantium? Nulla odio sed maiores ut eaque vitae libero accusantium?</p>
+    </main>
+</body>
+</html>
