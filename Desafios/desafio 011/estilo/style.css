@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+:root{
+    --cor00: #F29F05;
+    --cor01: #F27405;
+    --cor02: #F25C05;
+    --cor03: #8C1C03;
+    --cor04: #591202;
+    
+    --font-conteudo: 'Pangolin', Arial, Helvetica, Sans-serif;
+    --font-padrao: Arial, Helvetica, Sans-serif;
+    --font-titulo: 'Bubblegum Sans', Arial, Helvetica, Sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+    
+
+header{
+    width: 100%;
+    height: 35%;
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /*Deixa em maiscúlo, porém com desnível da letra inicial.*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.6em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: darkgray;
+    color: white;
+}
+
+section.imagem > p{
+    width: 350px;
+    background-color: #f25c05ad;
+
+}
+
+footer{
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
