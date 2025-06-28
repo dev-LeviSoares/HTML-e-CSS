@@ -33,15 +33,19 @@ header{
     background-color: var(--cor02);
     color: white;
     text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
 }
 
 header > h1{
     padding-top: 50px;
+    font-family: var(--font-titulo);
     font-variant: small-caps; /*Deixa em maiscúlo, porém com desnível da letra inicial.*/
 }
 
 header > p{
     padding-bottom: 50px;
+    font-family: var(--font-padrao);
 }
 
 a{
@@ -59,6 +63,9 @@ section{
     padding-bottom: 10vh;
     line-height: 1.6em;
     padding-left: 30px;
+    font-family: var(--font-conteudo);
+    font-size: 2.1vw;
+    font-weight: bold;
 }
 
 section.normal{
@@ -72,9 +79,27 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 350px;
-    background-color: #f25c05ad;
+    display: inline-block;
+    background-color: #f25c05d5;
+    padding: 20px;
+    text-shadow: #8C1C03 2px 2px;
+}
 
+section > #p1{
+    background-color: #f25c05d5;
+}
+
+section#img01{
+    background-image: url(../imagens/background\ cordel.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background: var(--cor03) url(../imagens/2839194.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 footer{
@@ -82,4 +107,5 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--font-padrao);
 }
